@@ -8,6 +8,9 @@ export const clients: Client[] = [
   {
     id: "ncr-voyix",
     name: "NCR Voyix",
-    description: "Enterprise point-of-sale & payments platform",
+  },
+  {
+    id: "pitchsix",
+    name: "PitchSix",
   },
 ];
