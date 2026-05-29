@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const navLinks = [
@@ -16,7 +14,7 @@ export default function Nav() {
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link
-          href="/"
+          to="/"
           className="text-sm font-medium text-foreground tracking-tight hover:text-teal transition-colors"
         >
           Austin Cole
@@ -24,16 +22,16 @@ export default function Nav() {
 
         <nav className="hidden sm:flex items-center gap-6">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <Link
-            href="/contact"
+            to="/contact"
             className="text-sm px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
           >
             Contact
@@ -60,17 +58,17 @@ export default function Nav() {
       {menuOpen && (
         <div className="sm:hidden border-t border-border bg-white px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className="text-sm text-muted hover:text-foreground transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <Link
-            href="/contact"
+            to="/contact"
             className="text-sm w-fit px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
             onClick={() => setMenuOpen(false)}
           >

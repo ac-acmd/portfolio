@@ -1,12 +1,7 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { caseStudies } from "@/lib/case-studies";
 
-export const metadata = {
-  title: "Case Studies — Austin Cole",
-  description: "In-depth project breakdowns with measurable outcomes.",
-};
-
-export default function CaseStudiesPage() {
+export default function CaseStudies() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
       <div className="mb-12">
@@ -23,7 +18,7 @@ export default function CaseStudiesPage() {
             Detailed write-ups publishing soon
           </p>
           <Link
-            href="/"
+            to="/"
             className="text-sm text-foreground hover:text-teal transition-colors"
           >
             ← Back home
@@ -34,7 +29,7 @@ export default function CaseStudiesPage() {
           {caseStudies.map((study) => (
             <Link
               key={study.slug}
-              href={`/case-studies/${study.slug}`}
+              to={`/case-studies/${study.slug}`}
               className="group block p-6 border border-border rounded-lg hover:border-foreground transition-colors"
             >
               <div className="flex items-start justify-between gap-4">

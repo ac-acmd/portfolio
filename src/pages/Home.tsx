@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { clients } from "@/lib/clients";
 import { projects } from "@/lib/projects";
 import { caseStudies } from "@/lib/case-studies";
@@ -38,7 +38,7 @@ function Hero() {
           View my work
         </a>
         <Link
-          href="/contact"
+          to="/contact"
           className="px-5 py-2.5 border border-border text-sm rounded text-foreground hover:border-foreground transition-colors"
         >
           Get in touch
@@ -83,7 +83,7 @@ function CaseStudiesSection() {
           </div>
           {caseStudies.length > 0 && (
             <Link
-              href="/case-studies"
+              to="/case-studies"
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
               View all →
@@ -103,7 +103,7 @@ function CaseStudiesSection() {
             {caseStudies.map((study) => (
               <Link
                 key={study.slug}
-                href={`/case-studies/${study.slug}`}
+                to={`/case-studies/${study.slug}`}
                 className="group block p-6 border border-border rounded-lg hover:border-foreground transition-colors"
               >
                 <div className="flex items-start justify-between gap-4">
@@ -192,7 +192,7 @@ function About() {
 
         <div className="max-w-2xl space-y-4 text-muted leading-relaxed">
           <p>
-            I&apos;m a mobile software engineer with 6+ years building iOS and
+            I'm a mobile software engineer with 6+ years building iOS and
             Android applications. Most of my career has been at the intersection
             of shipping features and shipping faster — writing the app, then
             writing the tools that get it out the door reliably.
@@ -201,14 +201,14 @@ function About() {
             At NCR Voyix I worked on enterprise POS and payments apps, managing
             releases across 200+ white label clients. I spent a lot of time
             automating the slow parts: onboarding workflows, CI/CD pipelines,
-            release schedules. The problems I&apos;m most proud of solving
-            weren&apos;t the hardest ones — they were the ones nobody else had
+            release schedules. The problems I'm most proud of solving
+            weren't the hardest ones — they were the ones nobody else had
             stopped to fix.
           </p>
           <p>
-            I&apos;m now freelancing and building in public. If you need a
+            I'm now freelancing and building in public. If you need a
             mobile engineer who brings both product instincts and a habit of
-            optimizing the workflow around them, let&apos;s talk.
+            optimizing the workflow around them, let's talk.
           </p>
         </div>
 
@@ -242,17 +242,17 @@ function ContactCTA() {
     <section className="border-t border-border">
       <div className="max-w-4xl mx-auto px-6 py-20 text-center">
         <p className="text-xs font-mono text-teal uppercase tracking-widest mb-4">
-          Let&apos;s work together
+          Let's work together
         </p>
         <h2 className="text-2xl font-medium text-foreground mb-4">
           Got a project in mind?
         </h2>
         <p className="text-muted mb-8 max-w-md mx-auto leading-relaxed">
-          Whether it&apos;s a new app, a broken pipeline, or a workflow nobody
-          has bothered to fix yet — I&apos;d like to hear about it.
+          Whether it's a new app, a broken pipeline, or a workflow nobody
+          has bothered to fix yet — I'd like to hear about it.
         </p>
         <Link
-          href="/contact"
+          to="/contact"
           className="inline-block px-6 py-3 bg-foreground text-white text-sm rounded hover:bg-teal transition-colors"
         >
           Get in touch →
