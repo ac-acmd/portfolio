@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { clients } from "@/lib/clients";
 import { projects } from "@/lib/projects";
 import { caseStudies } from "@/lib/case-studies";
+import SEO from "../components/SEO";
 
 export default function Home() {
   return (
     <>
+      <SEO path="/" />
       <Hero />
       <TrustedBy />
       <CaseStudiesSection />

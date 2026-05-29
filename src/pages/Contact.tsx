@@ -1,7 +1,14 @@
 import ContactForm from "../components/ContactForm";
+import SEO from "../components/SEO";
 
 export default function Contact() {
   return (
+    <>
+      <SEO
+        title="Contact"
+        description="Get in touch with Austin Cole — iOS & Android engineer available for freelance projects."
+        path="/contact"
+      />
     <div className="max-w-4xl mx-auto px-6 py-20">
       <div className="mb-12">
         <p className="text-xs font-mono text-teal uppercase tracking-widest mb-2">
@@ -29,5 +36,6 @@ export default function Contact() {
         </p>
       </div>
     </div>
+    </>
   );
 }

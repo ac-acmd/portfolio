@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import { caseStudies } from "@/lib/case-studies";
+import SEO from "../components/SEO";
 
 export default function CaseStudies() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
+    <>
+      <SEO
+        title="Case Studies"
+        description="Deep dives into mobile engineering work — architecture, automation, and shipping at scale."
+        path="/case-studies"
+      />
+      <div className="max-w-4xl mx-auto px-6 py-20">
       <div className="mb-12">
         <p className="text-xs font-mono text-teal uppercase tracking-widest mb-2">
           Case Studies
@@ -51,5 +58,6 @@ export default function CaseStudies() {
         </div>
       )}
     </div>
+    </>
   );
 }
