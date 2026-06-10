@@ -4,6 +4,7 @@ import Footer from "@/src/components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import CaseStudies from "./pages/CaseStudies";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
         </Routes>
       </main>
       <Footer />
