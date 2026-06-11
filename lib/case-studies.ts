@@ -29,7 +29,7 @@ I traced the connection flow and found a hardcoded 10-second \`postDelayed\` bef
 
 Now I'm on retainer with them.
 
-This case study illustrates that sometimes you just need a fresh pair of eyes to find simple solutions to complex problems.
+Sometimes you just need a fresh pair of eyes to find simple solutions to complex problems.
 `,
   }
 ];
