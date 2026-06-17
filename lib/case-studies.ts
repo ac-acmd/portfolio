@@ -33,8 +33,8 @@ Sometimes you just need a fresh pair of eyes to find simple solutions to complex
 `,
   },
   {
-    slug: "freshop-by-ncr-voyix-mobile-app-onboarding-automation",
-    title: "Freshop by NCR Voyix's Mobile App Onboarding Automation",
+    slug: "freshop-mobile-app-onboarding-automation",
+    title: "Freshop's Mobile App Onboarding Automation",
     client: "Freshop by NCR Voyix",
     summary:
       "White labelled apps' onboarding time reduced from 2 hours to 40 minutes",
