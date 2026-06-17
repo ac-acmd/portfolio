@@ -47,7 +47,7 @@ Sometimes you just need a fresh pair of eyes to find simple solutions to complex
 
 ---
 
-Freshop builds eCommerce solutions that provide full digital engagement for grocery and specialty retailers. Freshop was experiencing a peak onboarding season during the summer of 2021. 
+Freshop is an eCommerce solution that provides full digital engagement for grocery and specialty retailers. Freshop was experiencing a peak onboarding season during the summer of 2021.
 
 The mobile app onboarding process took 2+ hours per client and involved a lot of manual steps prone to human error. This led to frequent mistakes during the process, sometimes resulting in up to an additional hour debugging the issue.
 
