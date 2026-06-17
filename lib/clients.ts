@@ -6,8 +6,8 @@ export type Client = {
 
 export const clients: Client[] = [
   {
-    id: "ncr-voyix",
-    name: "NCR Voyix",
+    id: "freshop-ncr-voyix",
+    name: "Freshop by NCR Voyix",
   },
   {
     id: "pitchsix",

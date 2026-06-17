@@ -31,5 +31,32 @@ Now I'm on retainer with them.
 
 Sometimes you just need a fresh pair of eyes to find simple solutions to complex problems.
 `,
+  },
+  {
+    slug: "freshop-by-ncr-voyix-mobile-app-onboarding-automation",
+    title: "Freshop by NCR Voyix's Mobile App Onboarding Automation",
+    client: "Freshop by NCR Voyix",
+    summary:
+      "White labelled apps' onboarding time reduced from 2 hours to 40 minutes",
+    tags: ["automation", "onboarding", "efficiency"],
+    content: `
+# Case Study: Freshop
+
+**Client:** Freshop\\
+**Platform:** iOS & Android (Onboarding Automation)
+
+---
+
+Freshop builds eCommerce solutions that provide full digital engagement for grocery and specialty retailers. Freshop was experiencing a peak onboarding season during the summer of 2021. 
+
+The mobile app onboarding process took 2+ hours per client and involved a lot of manual steps prone to human error. This led to frequent mistakes during the process, sometimes resulting in up to an additional hour debugging the issue.
+
+I built an initial script in an hour to handle mass file renaming and moving. It paid for itself immediately.
+
+I continued layering in automation: generating configs, OneSignal setup, and Bitrise app creation.
+
+I shared it with the team. What began as a personal script to save myself frustration was now a teamwide tool. It cut the average onboarding time from 2 hours to 40 minutes. I turned my least favorite task into a solved problem. Then I solved the same problem for the rest of the team.
+
+`,
   }
 ];

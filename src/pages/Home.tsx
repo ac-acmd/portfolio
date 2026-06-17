@@ -200,7 +200,7 @@ function About() {
             writing the tools that get it out the door reliably.
           </p>
           <p>
-            At NCR Voyix I worked on enterprise POS and payments apps, managing
+            At Freshop by NCR Voyix I worked on enterprise POS and payments apps, managing
             releases across 200+ white label clients. I spent a lot of time
             automating the slow parts: onboarding workflows, CI/CD pipelines,
             release schedules. The problems I'm most proud of solving
