@@ -12,6 +12,7 @@ interface SEOProps {
   path?: string;
   image?: string;
   type?: string;
+  noIndex?: boolean;
 }
 
 export default function SEO({
@@ -20,6 +21,7 @@ export default function SEO({
   path = '',
   image = DEFAULT_OG_IMAGE,
   type = 'website',
+  noIndex = false,
 }: SEOProps) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
   const canonicalUrl = `${BASE_URL}${path}`;
@@ -30,6 +32,7 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph */}
       <meta property="og:type" content={type} />
