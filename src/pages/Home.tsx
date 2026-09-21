@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { clients } from "@/lib/clients";
-import { projects } from "@/lib/projects";
+import { workItems } from "@/lib/work";
 import { caseStudies } from "@/lib/case-studies";
 import SEO from "../components/SEO";
 
@@ -154,24 +154,24 @@ function ProjectsSection() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {projects.map((project) => (
+          {workItems.map((item) => (
             <div
-              key={project.id}
+              key={item.id}
               className="p-6 border border-border rounded-lg hover:border-foreground transition-colors"
             >
-              {project.metric && (
+              {item.metric && (
                 <p className="text-xs font-mono text-teal mb-3">
-                  {project.metric}
+                  {item.metric}
                 </p>
               )}
               <h3 className="text-base font-medium text-foreground mb-2">
-                {project.title}
+                {item.title}
               </h3>
               <p className="text-sm text-muted leading-relaxed mb-4">
-                {project.description}
+                {item.outcome}
               </p>
               <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
+                {item.tags.map((tag) => (
                   <span
                     key={tag}
                     className="text-xs px-2 py-0.5 bg-teal-light text-teal-dark rounded"
