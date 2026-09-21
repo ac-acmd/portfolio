@@ -4,7 +4,7 @@ const SITE_NAME = 'Austin Cole';
 const BASE_URL = 'https://austincolemobiledev.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 const DEFAULT_DESCRIPTION =
-  'Austin Cole — iOS & Android engineer building polished mobile apps and shipping the automation around them.';
+  'Austin Cole is a freelance iOS, Android, and Bluetooth (BLE) engineer building and maintaining mobile apps for solo founders and small teams.';
 
 interface SEOProps {
   title?: string;
