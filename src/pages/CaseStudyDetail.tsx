@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { caseStudies } from "@/lib/case-studies";
 import Markdown from "@/src/components/Markdown";
 import SEO from "@/src/components/SEO";
@@ -7,7 +7,7 @@ export default function CaseStudyDetail() {
   const { slug } = useParams<{ slug: string }>();
   const study = caseStudies.find((s) => s.slug === slug);
 
-  if (!study) return <Navigate to="/case-studies" replace />;
+  if (!study) return <Navigate to="/" replace />;
 
   return (
     <>
@@ -18,12 +18,12 @@ export default function CaseStudyDetail() {
       />
       <div className="max-w-2xl mx-auto px-6 py-20">
         <div className="mb-2">
-          <Link
-            to="/case-studies"
+          <a
+            href="/#work"
             className="text-xs font-mono text-muted hover:text-foreground transition-colors"
           >
-            ← Case Studies
-          </Link>
+            ← Work
+          </a>
         </div>
 
         <div className="mb-12 mt-8">

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { site } from "@/lib/site";
 
 const navLinks = [
   { label: "Work", href: "/#work" },
-  { label: "Case Studies", href: "/case-studies" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "How it works", href: "/#how-it-works" },
   { label: "About", href: "/#about" },
 ];
 
@@ -30,12 +32,14 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href={site.schedulingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
           >
-            Contact
-          </Link>
+            Book a call
+          </a>
         </nav>
 
         <button
@@ -67,13 +71,15 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href={site.schedulingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm w-fit px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
-          </Link>
+            Book a call
+          </a>
         </div>
       )}
     </header>
