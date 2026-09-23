@@ -16,7 +16,7 @@ export const site: SiteDetails = {
   contactEmail: "austin@austincolemobiledev.com",
   schedulingUrl: "https://calendly.com/team-austincolemobiledev/30min",
   replyTimeframe: "1 business day",
-  retainerHourlyRate: 60,
+  retainerHourlyRate: 70,
   standardHourlyRate: 80,
   retainerMinimumHoursPerMonth: null,
   typicalProjectStartingPrice: null,
