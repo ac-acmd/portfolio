@@ -18,6 +18,15 @@ export const workItems: WorkItem[] = [
     tags: ["Android", "BLE", "Performance"],
     caseStudySlug: "force-board-ble-connection-time-optimization",
   },
+    {
+    id: "white-label-automation",
+    title: "White label onboarding and releases",
+    client: "Freshop by NCR Voyix",
+    outcome: "Automated onboarding and releases across 200+ apps. Onboarding dropped from 2 hrs to 40 min, and up-to-date apps went from 30% to 90%+.",
+    metric: "2 hrs → 40 min · 30% → 90%+ current",
+    tags: ["Bash", "Python", "Fastlane", "iOS", "Android"],
+    caseStudySlug: "freshop-mobile-app-onboarding-automation",
+  },
   {
     id: "firmware-test-library",
     title: "Firmware test library",
@@ -48,14 +57,5 @@ export const workItems: WorkItem[] = [
     outcome: "Cut response times by 50%+ by rewriting slow SQL and flattening nested logic.",
     metric: "50%+ faster",
     tags: ["Ruby", "SQL", "Backend"],
-  },
-  {
-    id: "white-label-automation",
-    title: "White label onboarding and releases",
-    client: "Freshop by NCR Voyix",
-    outcome: "Automated onboarding and releases across 200+ apps. Onboarding dropped from 2 hrs to 40 min, and up-to-date apps went from 30% to 90%+.",
-    metric: "2 hrs → 40 min · 30% → 90%+ current",
-    tags: ["Bash", "Python", "Fastlane", "iOS", "Android"],
-    caseStudySlug: "freshop-mobile-app-onboarding-automation",
   },
 ];
