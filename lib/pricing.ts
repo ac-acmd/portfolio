@@ -9,7 +9,7 @@ export const pricingOptions: PricingOption[] = [
   {
     id: "retainer",
     name: "Retainer",
-    price: "$60/hr",
+    price: "$70/hr",
     description: "Preferred rate for ongoing work. Best for continuous development and maintenance.",
   },
   {
