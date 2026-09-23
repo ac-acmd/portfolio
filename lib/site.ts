@@ -13,7 +13,7 @@ export type SiteDetails = {
 
 export const site: SiteDetails = {
   ownerName: "Austin Cole",
-  contactEmail: "austin@austincolemobiledev.com",
+  contactEmail: "test@austincolemobiledev.com",
   schedulingUrl: "https://calendly.com/team-austincolemobiledev/30min",
   replyTimeframe: "1 business day",
   retainerHourlyRate: 70,

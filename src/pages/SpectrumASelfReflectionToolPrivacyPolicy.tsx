@@ -83,10 +83,10 @@ export default function SpectrumASelfReflectionToolPrivacyPolicy() {
           <p className="text-sm text-muted leading-relaxed mb-4">
             Questions? Email us at{" "}
             <a
-              href="mailto:austin@austincolemobiledev.com"
+              href="mailto:team@austincolemobiledev.com"
               className="text-foreground hover:text-teal transition-colors"
             >
-              austin@austincolemobiledev.com
+              team@austincolemobiledev.com
             </a>
           </p>
         </div>
