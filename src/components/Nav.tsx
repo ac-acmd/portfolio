@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { site } from "@/lib/site";
+import { bluetoothAuditRequestPath } from "@/lib/services";
 
 const navLinks = [
   { label: "Services", href: "/#services" },
@@ -8,6 +9,9 @@ const navLinks = [
   { label: "Work", href: "/#work" },
   { label: "About", href: "/#about" },
 ];
+
+const auditButtonClassName =
+  "text-sm px-4 py-1.5 border border-foreground bg-foreground text-white rounded hover:bg-teal hover:border-teal transition-colors";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,11 +36,14 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
+          <Link to={bluetoothAuditRequestPath} className={auditButtonClassName}>
+            Request an audit
+          </Link>
           <a
             href={site.schedulingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
+            className="hidden md:inline-block text-sm px-4 py-1.5 border border-foreground rounded hover:bg-foreground hover:text-white transition-colors"
           >
             Book a call
           </a>
@@ -71,6 +78,13 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
+          <Link
+            to={bluetoothAuditRequestPath}
+            className={`${auditButtonClassName} w-fit`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Request an audit
+          </Link>
           <a
             href={site.schedulingUrl}
             target="_blank"
