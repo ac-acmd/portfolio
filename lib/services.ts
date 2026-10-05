@@ -164,7 +164,7 @@ export const serviceTerms: ServiceTerm[] = [
       "Retainers are billed upfront on the 1st, with 30 days' notice to cancel. Work and retainer coverage pause on overdue invoices.",
   },
   {
-    title: "Out-of-scope work",
+    title: "Overage work",
     description:
       "$120/hr for active retainer clients, $130/hr for everyone else, 1 hr minimum. Work over 8 hrs is re-scoped as a project.",
   },
