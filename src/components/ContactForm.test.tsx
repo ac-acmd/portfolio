@@ -16,9 +16,9 @@ const projectType = projectTypeOptions[0];
 const budget = budgetOptions[1];
 const timeline = timelineOptions[0];
 
-function renderForm() {
+function renderForm(initialEntry = "/contact") {
   return render(
-    <MemoryRouter>
+    <MemoryRouter initialEntries={[initialEntry]}>
       <ContactForm />
     </MemoryRouter>
   );
@@ -42,6 +42,20 @@ beforeEach(() => {
 });
 
 describe("ContactForm", () => {
+  it("preselects the BLE code audit project type from the service query parameter", () => {
+    renderForm("/contact?service=bluetooth-audit");
+
+    const projectTypeSelect = screen.getByLabelText("Project type") as HTMLSelectElement;
+    expect(projectTypeSelect.value).toBe("BLE code audit");
+  });
+
+  it("leaves the project type on the placeholder without the service query parameter", () => {
+    renderForm();
+
+    const projectTypeSelect = screen.getByLabelText("Project type") as HTMLSelectElement;
+    expect(projectTypeSelect.value).toBe("");
+  });
+
   it("submits the chosen project details to emailjs", async () => {
     sendMock.mockResolvedValueOnce({ status: 200, text: "OK" });
     const user = userEvent.setup();

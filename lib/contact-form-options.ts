@@ -1,4 +1,7 @@
+export const bluetoothAuditProjectType = "BLE code audit";
+
 export const projectTypeOptions = [
+  bluetoothAuditProjectType,
   "New app (MVP)",
   "Existing app: features or fixes",
   "Bluetooth / hardware app",

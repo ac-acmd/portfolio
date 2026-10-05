@@ -2,9 +2,10 @@ import PageSection from "@/src/components/PageSection";
 import SectionHeading from "@/src/components/SectionHeading";
 
 const fitPoints = [
-  "You have a product or hardware device and no mobile developer.",
-  "Your app is slow, buggy, or stuck in a painful release process.",
-  "You need ongoing mobile work but not a full-time hire.",
+  "Your app drops connections, fails to pair, or loses data mid-sync.",
+  "Bluetooth works on one phone or OS version and breaks on another.",
+  "An iOS or Android update broke something and nobody knows why.",
+  "You're about to ship hardware and want the app's Bluetooth checked first.",
 ];
 
 export default function WhoThisIsFor() {
@@ -19,8 +20,7 @@ export default function WhoThisIsFor() {
         ))}
       </ul>
       <p className="text-sm text-muted mt-8">
-        Not a fit: large teams looking for staff augmentation through a
-        procurement process.
+        Not a fit: firmware-only work with no mobile app.
       </p>
     </PageSection>
   );

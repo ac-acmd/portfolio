@@ -8,7 +8,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact"
-        description="Tell Austin Cole about your iOS, Android, or Bluetooth app project. Replies within 1 business day."
+        description="Request a BLE code audit or tell Austin Cole about your iOS or Android Bluetooth project. Replies within 1 business day."
         path="/contact"
       />
       <div className="max-w-4xl mx-auto px-6 py-20">

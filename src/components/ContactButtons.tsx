@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { bluetoothAuditRequestPath } from "@/lib/services";
 import ButtonLink from "@/src/components/ButtonLink";
 
 type ContactButtonsProps = {
@@ -8,18 +9,18 @@ type ContactButtonsProps = {
 };
 
 export default function ContactButtons({
-  primaryLabel = "Book a call",
-  secondaryLabel = "Send project details",
+  primaryLabel = "Request a BLE audit",
+  secondaryLabel = "Book a 15-min call",
   className = "",
 }: ContactButtonsProps) {
   const wrapperClassName = className ? `flex flex-wrap gap-3 ${className}` : "flex flex-wrap gap-3";
 
   return (
     <div className={wrapperClassName}>
-      <ButtonLink href={site.schedulingUrl} variant="primary">
+      <ButtonLink href={bluetoothAuditRequestPath} variant="primary">
         {primaryLabel}
       </ButtonLink>
-      <ButtonLink href="/contact" variant="secondary">
+      <ButtonLink href={site.schedulingUrl} variant="secondary">
         {secondaryLabel}
       </ButtonLink>
     </div>

@@ -3,23 +3,11 @@ export type SiteDetails = {
   contactEmail: string;
   schedulingUrl: string;
   replyTimeframe: string;
-  retainerHourlyRate: number;
-  standardHourlyRate: number;
-  retainerMinimumHoursPerMonth: number | null;
-  typicalProjectStartingPrice: number | null;
-  quoteTurnaround: string;
-  buildUpdateCadence: string;
 };
 
 export const site: SiteDetails = {
   ownerName: "Austin Cole",
-  contactEmail: "test@austincolemobiledev.com",
-  schedulingUrl: "https://calendly.com/team-austincolemobiledev/30min",
+  contactEmail: "team@austincolemobiledev.com",
+  schedulingUrl: "https://calendly.com/team-austincolemobiledev/meet-about-app",
   replyTimeframe: "1 business day",
-  retainerHourlyRate: 70,
-  standardHourlyRate: 80,
-  retainerMinimumHoursPerMonth: null,
-  typicalProjectStartingPrice: null,
-  quoteTurnaround: "48 hours",
-  buildUpdateCadence: "weekly",
 };

@@ -6,23 +6,23 @@ export type ProcessStep = {
 
 export const processSteps: ProcessStep[] = [
   {
-    title: "Scope call",
-    detail: "15 min, free",
-    description: "You describe the problem. I tell you whether I'm the right fit and give a rough price range.",
+    title: "Request an audit",
+    detail: "reply within 1 business day",
+    description: "Tell me about your app and your Bluetooth device. I confirm the scope and the price.",
   },
   {
-    title: "Written quote",
-    detail: "within 48 hours",
-    description: "Scope, price, and timeline in writing. No surprises.",
+    title: "Share access",
+    detail: "spec, code, hardware",
+    description: "Send the peripheral spec and read access to the code. Send a device too if you want on-device testing.",
   },
   {
-    title: "Build",
-    detail: "weekly test builds",
-    description: "You get test builds on your phone and async progress updates.",
+    title: "Get your report",
+    detail: "5 business days",
+    description: "Severity-ranked findings, a recommended approach, and a fixed-price quote for the fix. Delivered even if nothing is wrong.",
   },
   {
-    title: "Ship and handoff",
-    detail: "you own everything",
-    description: "I handle App Store and Play Store submission. Code lives in your repo, and you own everything.",
+    title: "Fix it and stay covered",
+    detail: "optional",
+    description: "Sign the project within 30 days and the $400 is credited. A retainer then keeps the app working through OS updates.",
   },
 ];

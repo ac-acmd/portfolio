@@ -3,9 +3,9 @@ import { useState } from "react";
 import { site } from "@/lib/site";
 
 const navLinks = [
-  { label: "Work", href: "/#work" },
-  { label: "Pricing", href: "/#pricing" },
+  { label: "Services", href: "/#services" },
   { label: "How it works", href: "/#how-it-works" },
+  { label: "Work", href: "/#work" },
   { label: "About", href: "/#about" },
 ];
 

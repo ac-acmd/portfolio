@@ -1,8 +1,15 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import FormField, { formControlClassName } from "./FormField";
+import { useSearchParams } from "react-router-dom";
 import { site } from "@/lib/site";
-import { projectTypeOptions, budgetOptions, timelineOptions } from "@/lib/contact-form-options";
+import { bluetoothAuditServiceQueryValue } from "@/lib/services";
+import {
+  bluetoothAuditProjectType,
+  projectTypeOptions,
+  budgetOptions,
+  timelineOptions,
+} from "@/lib/contact-form-options";
 
 type FormValues = {
   name: string;
@@ -52,8 +59,16 @@ function SelectField({ id, value, options, onChange }: SelectFieldProps) {
   );
 }
 
+function createInitialFormValues(service: string | null): FormValues {
+  if (service !== bluetoothAuditServiceQueryValue) return emptyFormValues;
+  return { ...emptyFormValues, projectType: bluetoothAuditProjectType };
+}
+
 export default function ContactForm() {
-  const [formValues, setFormValues] = useState<FormValues>(emptyFormValues);
+  const [searchParameters] = useSearchParams();
+  const [formValues, setFormValues] = useState<FormValues>(() =>
+    createInitialFormValues(searchParameters.get("service"))
+  );
   const [submissionStatus, setSubmissionStatus] = useState<SubmissionStatus>("idle");
   const [submittedEmail, setSubmittedEmail] = useState("");
 

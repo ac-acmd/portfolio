@@ -5,7 +5,7 @@ import Hero from "../components/home/Hero";
 import PastClients from "../components/home/PastClients";
 import WhoThisIsFor from "../components/home/WhoThisIsFor";
 import WorkSection from "../components/home/WorkSection";
-import Pricing from "../components/home/Pricing";
+import Services from "../components/home/Services";
 import HowItWorks from "../components/home/HowItWorks";
 import About from "../components/home/About";
 import FinalCallToAction from "../components/home/FinalCallToAction";
@@ -25,9 +25,9 @@ export default function Home() {
       <Hero />
       <PastClients />
       <WhoThisIsFor />
-      <WorkSection />
-      <Pricing />
+      <Services />
       <HowItWorks />
+      <WorkSection />
       <About />
       <FinalCallToAction />
     </>
