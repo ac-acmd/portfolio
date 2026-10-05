@@ -34,14 +34,14 @@ export const workItems: WorkItem[] = [
     outcome: "Built a test suite that checks outsourced BLE firmware against the spec, so problems surface before release, not after.",
     tags: ["Node.js", "BLE", "Testing"],
   },
-  {
-    id: "store-selection-performance",
-    title: "Store selection performance",
-    client: "Freshop by NCR Voyix",
-    outcome: "A screen that took 10+ minutes to load now loads in under 5 seconds.",
-    metric: "10+ min → <5 sec",
-    tags: ["Swift", "Kotlin", "Performance"],
-  },
+  // {
+  //   id: "store-selection-performance",
+  //   title: "Store selection performance",
+  //   client: "Freshop by NCR Voyix",
+  //   outcome: "A screen that took 10+ minutes to load now loads in under 5 seconds.",
+  //   metric: "10+ min → <5 sec",
+  //   tags: ["Swift", "Kotlin", "Performance"],
+  // },
   {
     id: "cicd-pipeline",
     title: "CI/CD pipeline",
@@ -50,12 +50,12 @@ export const workItems: WorkItem[] = [
     metric: "1 hr → 20 min",
     tags: ["Bitrise", "GitHub Actions", "Fastlane", "Android"],
   },
-  {
-    id: "api-latency",
-    title: "API latency",
-    client: "Freshop by NCR Voyix",
-    outcome: "Cut response times by 50%+ by rewriting slow SQL and flattening nested logic.",
-    metric: "50%+ faster",
-    tags: ["Ruby", "SQL", "Backend"],
-  },
+  // {
+  //   id: "api-latency",
+  //   title: "API latency",
+  //   client: "Freshop by NCR Voyix",
+  //   outcome: "Cut response times by 50%+ by rewriting slow SQL and flattening nested logic.",
+  //   metric: "50%+ faster",
+  //   tags: ["Ruby", "SQL", "Backend"],
+  // },
 ];
