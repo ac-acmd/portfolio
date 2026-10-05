@@ -49,10 +49,6 @@ export default function WorkSection() {
           <WorkCard key={item.id} item={item} />
         ))}
       </div>
-      <div className="border border-dashed border-border rounded-lg p-8 text-center mt-4">
-        <p className="text-sm text-muted mb-1">Small-scale case study coming soon</p>
-        <p className="text-xs text-muted opacity-60">MVP, personal app, or early client project</p>
-      </div>
     </PageSection>
   );
 }
