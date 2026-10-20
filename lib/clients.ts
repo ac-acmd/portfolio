@@ -21,4 +21,9 @@ export const clients: Client[] = [
     name: "Freshop by NCR Voyix",
     sizeLabel: "enterprise, 200+ apps",
   },
+  {
+    id: "golf-game-wagers",
+    name: "Golf Game Wagers",
+    sizeLabel: "startup",
+  },
 ];
