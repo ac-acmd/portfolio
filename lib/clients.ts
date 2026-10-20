@@ -17,13 +17,13 @@ export const clients: Client[] = [
     sizeLabel: "hardware startup",
   },
   {
-    id: "freshop-ncr-voyix",
-    name: "Freshop by NCR Voyix",
-    sizeLabel: "enterprise, 200+ apps",
-  },
-  {
     id: "golf-game-wagers",
     name: "Golf Game Wagers",
     sizeLabel: "startup",
+  },
+  {
+    id: "freshop-ncr-voyix",
+    name: "Freshop by NCR Voyix",
+    sizeLabel: "enterprise, 200+ apps",
   },
 ];
